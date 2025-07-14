@@ -1,10 +1,10 @@
 {
   "mappings": [
-    "/content/dxp-helix-univ/:/",
-    "/content/dxp-helix-univ/configuration:/.helix/config.json",
-    "/content/dxp-helix-univ/metadata:/metadata.json"
+    "/content/dxp/:/",
+    "/content/dxp/configuration:/.helix/config.json",
+    "/content/dxp/metadata:/metadata.json"
   ],
   "includes": [
-    "/content/dxp-helix-univ/"
+    "/content/dxp/"
   ]
 }
