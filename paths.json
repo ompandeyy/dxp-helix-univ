@@ -1,10 +1,10 @@
 {
   "mappings": [
-    "/content/dxp-eds-demo/:/",
-    "/content/dxp-eds-demo/configuration:/.helix/config.json",
-    "/content/dxp-eds-demo/metadata:/metadata.json"
+    "/content/dxp-universal-editor-demo/:/",
+    "/content/dxp-universal-editor-demo/configuration:/.helix/config.json",
+    "/content/dxp-universal-editor-demo/metadata:/metadata.json"
   ],
   "includes": [
-    "/content/dxp-eds-demo/"
+    "/content/dxp-universal-editor-demo/"
   ]
 }
