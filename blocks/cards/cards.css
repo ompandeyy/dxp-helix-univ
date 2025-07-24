@@ -3,114 +3,25 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 32px;
-  align-items: stretch;
+  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+  grid-gap: 24px;
 }
 
 .cards > ul > li {
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  border: 1px solid #dadada;
+  background-color: var(--background-color);
 }
 
-.cards > ul > li:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+.cards .cards-card-body {
+  margin: 16px;
 }
 
-/* Image */
 .cards .cards-card-image {
-  overflow: hidden;
   line-height: 0;
 }
 
 .cards > ul > li img {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.cards > ul > li:hover img {
-  transform: scale(1.02);
-}
-
-/* Body */
-.cards .cards-card-body {
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
-.cards .cards-card-body h2 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin: 0 0 12px;
-  line-height: 1.4;
-  color: #111;
-}
-
-.cards .cards-card-body h2 a {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  color: #000;
-  text-decoration: none;
-  transition: color 0.2s ease;
-  font-weight: 700;
-}
-
-.cards .cards-card-body h2 a::after {
-  content: "›";
-  font-size: 1.3rem;
-  color: #e40017;
-  transition: transform 0.2s ease;
-}
-
-.cards .cards-card-body h2 a[href*="global-en"]::after {
-  content: "↗";
-  font-size: 0.9em;
-  color: #e40017;
-}
-
-.cards .cards-card-body h2 a:hover::after {
-  transform: translateX(4px);
-}
-
-.cards .cards-card-body p {
-  font-size: 0.95rem;
-  line-height: 1.5;
-  color: #444;
-  margin: 0;
-}
-
-/* Remove default button-container look */
-.cards .cards-card-body p.button-container {
-  display: none;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .cards > ul {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-
-  .cards .cards-card-body {
-    padding: 20px;
-  }
-
-  .cards .cards-card-body h2 {
-    font-size: 1rem;
-  }
-
-  .cards .cards-card-body p {
-    font-size: 0.9rem;
-  }
 }
